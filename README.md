@@ -37,7 +37,7 @@ flowchart LR
 
 Here are some snapshots of **DeepAge** in action:
 
-![Working](Screenshots/ask_question.png)
+![Working](Screenshots/ss.png)
 
 ## Tech Stack
 
