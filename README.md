@@ -1,4 +1,3 @@
-
 # DeepAge – Local PDF Search & AI Q&A
 
 DeepAge is a Retrieval-Augmented Generation (RAG) system that enables semantic search over your PDFs and context-aware answers using a local embedding model and Groq LLM.
@@ -9,6 +8,16 @@ DeepAge is a Retrieval-Augmented Generation (RAG) system that enables semantic s
 - Vector similarity search via FAISS.
 - Answer questions using context-aware LLM (Groq).
 - Fully deployable on Streamlit Cloud.
+
+## How It Works
+
+1. **PDF Upload & Text Extraction:** You provide PDFs which are converted to raw text.  
+2. **Chunking:** Large text is split into smaller chunks to allow precise embeddings.  
+3. **Embeddings Generation:** Each chunk is converted into a vector representation using Sentence Transformers.  
+4. **Vector Store:** Chunks and their embeddings are stored in FAISS for fast similarity search.  
+5. **Query Processing:** When a user asks a question, the system embeds the query and searches FAISS for the most relevant chunks.  
+6. **Context-Aware Answering:** Retrieved chunks are fed to the Groq LLM which generates an answer using only that context.  
+7. **Result Display:** The answer along with the sources used is displayed on the Streamlit interface.
 
 ## Architecture
 
@@ -29,7 +38,6 @@ flowchart LR
 Here are some snapshots of **DeepAge** in action:
 
 ![Working](Screenshots/ask_question.png)
-
 
 ## Tech Stack
 
@@ -80,8 +88,3 @@ python ingest.py
 ## License
 
 MIT License.
-
-
-
-
-
