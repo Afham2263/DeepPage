@@ -24,6 +24,13 @@ flowchart LR
     H --> I[Answer Displayed to User]
 ````
 
+## Screenshots
+
+Here are some snapshots of **DeepAge** in action:
+
+![Working](screenshots/ask_question.png)
+
+
 ## Tech Stack
 
 * **Frontend:** Streamlit
